@@ -23,8 +23,27 @@ def lcsa(arr1, arr2):
     # print(arr2_groups)
     return longestArr
 
+# Twitter response - not sure I copied this over right
+    # def common_subarr(arr1, arr2):
+
+    #     s1 = "".join(arr1)
+    #     s2 = "".join(arr2)
+
+    #     i = 0
+    #     j = len(s1)
+
+    #     for (sum(range(len(s1)))):
+    #         tmp = s1.substring(i,j)
+    #         if tmp in s2:
+    #             return tmp.split()
+    #         j -= 1
+    #         if j < i:
+    #             j = len(s1)
+    #             i += 1
+
 if __name__ == '__main__':
     t1 = [1, 1, 1, 3, 5, 6, 8]
     t2 = [1, 1, 3, 4, 5, 6, 8]
 
     print(lcsa(t1, t2))
+    # print(common_subarr(t1, t2))
