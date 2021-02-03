@@ -23,9 +23,12 @@ def findUnique2(arr):
     return t
     # return d.keys()
 
-
+# Twitter answer 1 - usings sets() --> Need to learn more about sets
+def findUnique3(arr):
+    return list(set(arr))
 
 if __name__ == '__main__':
     array = 'a b b c d c d e f f g h'.split()
     print(findUnique(array))
     print(findUnique2(array))
+    print(findUnique3(array))
