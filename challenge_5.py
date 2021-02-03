@@ -19,6 +19,8 @@ def minmax2(arr):
     return min(arr), max(arr)
     
 
+# Twitte answers not very compelling
+
 if __name__ == '__main__':
     import random
     t = []
