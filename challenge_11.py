@@ -14,6 +14,16 @@ def minDiffArr(arr):
             idx = i
     return diff_arr, idx
 
-t = [1,2,3,4,5,6]
+
+# Twitter answer 1
+def min_dif(arr):
+    min_index = 0
+    for i in range(0, len(arr)):
+        if abs(sum(arr[:i]) - sum(arr[i:])) < abs(sum(arr[:min_index]) - sum(arr[min_index:])):
+            min_index = i
+    return(arr[:min_index], arr[min_index:])
+
+t = [1,2,3,4,5,6,7,8,9]
 
 print(minDiffArr(t))
+print(min_dif(t))
